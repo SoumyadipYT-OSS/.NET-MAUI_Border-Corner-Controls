@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LearnBorderCorner.LearnBorderCorner"
+             Title="LearnBorderCorner">
+
+    <Grid RowDefinitions="4" BackgroundColor="AliceBlue">
+        <VerticalStackLayout SemanticProperties.HeadingLevel="Level1" Margin="10">
+            <Border WidthRequest="250"
+                    Stroke="Fuchsia"
+                    StrokeThickness="5"
+                    StrokeDashArray="1 1"
+                    StrokeDashOffset="2">
+                <Label Text="Frame with Border"
+                       SemanticProperties.HeadingLevel="Level1" 
+                       FontSize="Large"
+                       HorizontalOptions="Center" 
+                       />
+            </Border>
+
+            <StackLayout SemanticProperties.HeadingLevel="Level1">
+                <Border Margin="10" WidthRequest="250"
+                        Stroke="IndianRed"
+                        StrokeThickness="5"
+                        StrokeDashArray="5 1"
+                        StrokeDashOffset="1">
+                    <Label Text="Bharat"
+                           FontSize="Large"
+                           TextColor="Orange"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"
+                           FontAutoScalingEnabled="True"
+                           />
+                </Border>
+            </StackLayout>
+
+            <StackLayout SemanticProperties.HeadingLevel="Level2">
+                <Border Margin="10" WidthRequest="250"
+                        Stroke="Gold"
+                        StrokeThickness="5"
+                        StrokeShape="RoundRectangle 40, 0, 0, 40">
+                    <Label Text="Sanskrit"
+                           FontSize="Large"
+                           TextColor="RosyBrown"
+                           HorizontalOptions="Center"
+                           FontAttributes="Bold"
+                           FontAutoScalingEnabled="True"
+                           />
+                </Border>
+            </StackLayout>
+
+            <StackLayout SemanticProperties.HeadingLevel="Level3">
+                <Border WidthRequest="150" Margin="10"
+                        Stroke="Peru"
+                        StrokeThickness="5"
+                        StrokeShape="RoundRectangle 10 10 10 10"
+                        >
+                    <Button Text="Click" FontSize="Large"
+                            BackgroundColor="MediumVioletRed"
+                            FontAutoScalingEnabled="True" />
+                </Border>
+            </StackLayout>
+        </VerticalStackLayout>
+        
+
+        <VerticalStackLayout SemanticProperties.HeadingLevel="Level2" Margin="10">
+            
+        </VerticalStackLayout>
+    </Grid>
+    
+</ContentPage>
